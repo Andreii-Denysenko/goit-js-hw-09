@@ -26,3 +26,5 @@ function onStopBodyColor(){
 clearInterval(idInterval);
 refs.btStart.disabled = false;
 };
+const x = 10;
+console.log(x)

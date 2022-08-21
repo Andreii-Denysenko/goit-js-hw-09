@@ -1,0 +1,48 @@
+body {
+text-align: center;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+  }
+  .field{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: solid 1px rgb(65, 46, 43);
+  width:150px;
+  height: 100px;
+  margin-right: 5px;
+  }
+  
+button{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    background-color: blue;
+    color:yellow;
+    border:1px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.value{
+    font-size: 30px;
+}
+.label{
+    font-size: 20px;
+}
+
+  button:hover,
+  button:focus{
+    color: blue;
+    background-color: yellow;
+    
+  }
