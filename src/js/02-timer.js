@@ -67,7 +67,7 @@ this.timerID = setInterval(() => {
           const deltaTime = selectedTime - currentTime;
           const componentsTimer = convertMs(deltaTime);
           this.updateComponentsTimer(componentsTimer);
-          if (deltaTime <= 0 || deltaTime <= 10) {
+          if (deltaTime <= 0 || deltaTime <= 1000 ) {
             this.stopTimer();
           }
         }, 1000);
@@ -75,6 +75,7 @@ this.timerID = setInterval(() => {
 
     stopTimer(){
             clearInterval(this.timerID);
+            return;
         };
     updateComponentsTimer({days, hours, minutes, seconds}){
         daysValue.textContent = addLeadingZero(days);
